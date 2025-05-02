@@ -1,0 +1,66 @@
+{
+    "name": "GameState",
+    "type": "object",
+    "properties": {
+      "creature_name": {
+        "type": "string",
+        "description": "Name of the floating creature"
+      },
+      "task_type": {
+        "type": "string",
+        "enum": [
+          "flowers",
+          "food",
+          "animals",
+          "nature",
+          "celebration",
+          "fruits"
+        ],
+        "description": "Type of emojis the creature wants to eat"
+      },
+      "success_count": {
+        "type": "number",
+        "description": "Number of correct emojis eaten",
+        "default": 0
+      },
+      "target_count": {
+        "type": "number",
+        "description": "Number of emojis needed to complete the task",
+        "default": 3
+      },
+      "initial_emoji_count": {
+        "type": "number",
+        "description": "Initial number of emojis given to player",
+        "default": 15
+      },
+      "is_completed": {
+        "type": "boolean",
+        "description": "Whether the game has been completed",
+        "default": false
+      },
+      "available_messages": {
+        "type": "number",
+        "description": "Number of messages player can send",
+        "default": 1
+      },
+      "mood_level": {
+        "type": "number",
+        "description": "Current mood level (1-10)",
+        "default": 8
+      },
+      "total_blobs": {
+        "type": "number",
+        "description": "Total number of active blobs",
+        "default": 1
+      },
+      "wrong_emoji_count": {
+        "type": "number",
+        "description": "Number of wrong emojis eaten",
+        "default": 0
+      }
+    },
+    "required": [
+      "creature_name",
+      "task_type"
+    ]
+  }

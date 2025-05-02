@@ -1,0 +1,10 @@
+@keyframes slowWiggle {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(3deg) scale(1.02); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.7); }
+}
